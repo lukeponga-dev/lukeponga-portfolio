@@ -1,40 +1,70 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MY PORTFOLIO</title>
-    <link rel="stylesheet" href="css/portfolio.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--<meta property="og:title" content="" />-->
+    <!--<meta property="og:url" content="" />-->
+    <!--<meta property="og:image" content="" />-->
+    <!--<meta property="og:site_name" content="" />-->
+    <!--<meta property="og:description" content="" />-->
+    <title>LUKE PONGA</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+            <script src="scripts/html5shiv.min.js"></script>
+        <![endif]-->
 </head>
 
 <body>
-    <header>
-        <nav class="nav-wrapper">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/white-logo.png" class="logo">
-                    <h3 class="brand">Web Development and Eye-opening Designs</h3>
-                </a>
-            </div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">My Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#slider">Slider</a></li>
-                <li><a href="#footer">Footer</a></li>
+    <div class="main-overlay js-main-overlay"></div>
+    <section class="cover-main" id="Portfolio">
+        <header>
+
+            <nav class="nav-wrapper">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/white-logo.png" class="logo">
+                        <h3 class="brand">Web Development and Eye-opening Designs</h3>
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="menu-trigger js-menu-trigger"></div>
+        </header>
+        <div class="wrapper">
+            <ul id="scene" data-invert-x="false" data-invert-y="false" data-scalar-x="7" data-scalar-y="7"
+                data-friction-x="0.1" data-friction-y="0.1" data-origin-x="0.5" data-origin-y="0.5">
+                <li class="layer name" data-depth="0.90">Luke Ponga</li>
+                <li class="layer title" data-depth="0.50">My Portfolio</li>
+
             </ul>
-        </nav>
-        <div class="menu-trigger js-menu-trigger"></div>
-    </header>
-    <div>
-        <iframe
-            src="https://onedrive.live.com/embed?resid=9097F3B189793FDD%21195792&amp;authkey=%21AOPYrD1lFTScsPI&amp;em=2&amp;wdStartOn=1"
-            width="1000px" height="1000px" frameborder="0">This is an embedded <a target="_blank"
-                href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank"
-                href="https://office.com/webapps">Office</a>.</iframe>
-    </div>
+        </div>
+    </section>
+    <section class="masonry-grid" id="work">
+        <h2 class="sub-title">QUALIFICATIONS</h2>
+        <div class="grid">
+          <div class="grid-item">  <p><b>New Zealand Diploma in Software Development(Level 6)</b></p></div>
+        </div>
+
+</section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script src="scripts/masonry.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
 </body>
 
 </html>
