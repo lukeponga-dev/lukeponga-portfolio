@@ -1,2 +1,4 @@
-# LukePongas-Portfolio
-my portfolio
+# LukePongas-Portfolio 🥇
+My Portfolio 💻
+
+🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢
