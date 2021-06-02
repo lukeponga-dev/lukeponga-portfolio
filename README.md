@@ -1,4 +1,0 @@
-# LukePongas-Portfolio 🥇
-My Portfolio 💻
-
-🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢

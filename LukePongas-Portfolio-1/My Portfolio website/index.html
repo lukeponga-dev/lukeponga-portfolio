@@ -4,22 +4,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <!--<meta property="og:title" content="" />-->
-  <!--<meta property="og:url" content="" />-->
-  <!--<meta property="og:image" content="" />-->
-  <!--<meta property="og:site_name" content="" />-->
-  <!--<meta property="og:description" content="" />-->
-  <title>LUKE PONGA</title>
+  <meta property="og:title" content="Portfolio" />
+  <meta property="og:url" content="developmentdesigns.online" />
+  <meta property="og:author" content="Luke Ponga" />
+
+  <title>Luke Ponga | Portfolio</title>
+  <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
   <link rel="stylesheet" href="css/slick.css" />
   <link rel="stylesheet" href="css/slick-theme.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <!--[if lt IE 9]>
-      <script src="scripts/html5shiv.min.js"></script>
-    <![endif]-->
+
 </head>
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat"></div>
 
 
 <div class="main-overlay js-main-overlay"></div>
@@ -59,7 +64,7 @@
 <section class="masonry-grid" id="work">
   <h2 class="sub-title">My Projects</h2>
   <div class="grid">
-    <div ><img class="grid-item" src="images/ten.png" alt="" /></div>
+    <div><img class="grid-item" src="images/ten.png" alt="" /></div>
 
     <!-- <div class="grid-item"><img src="images/Class.jpg" alt="" /></div>
     <div class="grid-item"><img src="images/class2.jpg" alt="" /></div>
@@ -73,14 +78,14 @@
 
 
 <!-- About me  -->
- <!-- My name is Luke Ponga i'm from New Zealand i'm very compassionate &
+<!-- My name is Luke Ponga i'm from New Zealand i'm very compassionate &
 humble, I've learned alot of knowledge through my journey to success.
 I have gruatuated diploma level (Software Development), i'm very
  devoted when it comes to my work i always strive for the best and to
 be reliable, I make sure any barrier I run into I get passed by using
 analytical methods. I'm committed to continuous learning and
 professional development within the IT fields -->
-  
+
 
 <section class="beating-heart" id="about">
   <div class="wrapper">
@@ -123,13 +128,15 @@ professional development within the IT fields -->
 <!-- Footer -->
 <footer id="footer">
   <h1 class="copyright">All rights reserved by Luke Ponga ©2019</h1>
-  
-  
-    <i class="fa fa-facebook-square" aria-hidden="true"><a class="" href="https://www.facebook.com/LukeDesigns.ltd/"></a></i>
-    
-<i class="fa fa-instagram" style="color: pink;" aria-hidden="true">  <a href="https://www.instagram.com/luke.inc_ltd/"></a></i>
-    <!-- <img src="images/f_logo_RGB-Blue_58.png" alt="facebook" /> -->
-    <!-- <img src="images/IG_Glyph_Fill.png" alt="instagram" /> -->
+
+
+  <i class="fa fa-facebook-square" aria-hidden="true"><a class=""
+      href="https://www.facebook.com/LukeDesigns.ltd/"></a></i>
+
+  <i class="fa fa-instagram" style="color: pink;" aria-hidden="true"> <a
+      href="https://www.instagram.com/luke.inc_ltd/"></a></i>
+  <!-- <img src="images/f_logo_RGB-Blue_58.png" alt="facebook" /> -->
+  <!-- <img src="images/IG_Glyph_Fill.png" alt="instagram" /> -->
 </footer>
 <!--End Footer -->
 <!-- Scripts Javascript, Jquery, parallax -->
@@ -145,36 +152,6 @@ professional development within the IT fields -->
   var parallax = new Parallax(scene)
 </script>
 <!-- END Parallax JS -->
-
-<!-- Messenger Chat Plugin Code -->
-<div id="fb-root"></div>
-
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat"></div>
-
-
-<!-- Messenger Chat JS -->
-<script>
-  var chatbox = document.getElementById('fb-customer-chat')
-  chatbox.setAttribute('page_id', '1857535227643730')
-  chatbox.setAttribute('attribution', 'biz_inbox')
-  window.fbAsyncInit = function () {
-    FB.init({
-      xfbml: true,
-      version: 'v10.0',
-    })
-  }
-
-  ;
-  (function (d, s, id) {
-    var js,
-      fjs = d.getElementsByTagName(s)[0]
-    if (d.getElementById(id)) return
-    js = d.createElement(s)
-    js.id = id
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
-    fjs.parentNode.insertBefore(js, fjs)
-  })(document, 'script', 'facebook-jssdk')
-</script>
 </body>
+
 </html>
