@@ -534,29 +534,27 @@ section.beating-heart h2::after {
 /* FOOTER START */
 footer {
   position: relative;
-  height: 150px;
+  height: 60px;
   background: black;
-  color: white;
-  text-align: left;
+  color: blue;
+  padding-top: 10px;
+  text-align: center;
+  
 }
 
 footer h1 {
-  position: relative;
-  font-size: 20px;
-  line-height: 25px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 50px;
+  position: ;
+  font-size: 15px;
+  /* line-height: -40px; */
+  color: azure;
+  font-weight: 500;
+  /* padding-top: 60px; */
 }
-footer a{
-  padding-left: 50px;
+footer i{
+  margin-top: 10px;
+  padding-left: 10px;
 }
-footer img{
-  position: relative;
-  width: 70px;
-  height: 60px;
-}
+
 /* FOOTER END */
 
 
@@ -576,7 +574,7 @@ footer img{
 }
 
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 760px) {
 
     .menu-trigger {
         background: url('../images/hamburger-icon.svg') no-repeat center / cover;
@@ -660,15 +658,15 @@ footer img{
 
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 360px) {
 
   ul#scene li.name {
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 23px;
+    line-height: 20px;
   }
 
   ul#scene li.title {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 25px;
     margin-top: 40px;
   }
@@ -678,17 +676,17 @@ footer img{
   }
 
   .btn {
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   ul#scene {
-    margin-top: 50px;
+    margin-top: 55px;
   }
 
   .portfolio-btn,
   .contact-btn {
     display: block;
-    margin: 20px auto;
+    margin: 27px auto;
     max-width: 120px;
     font-size: 15px;
     line-height: 20px;
@@ -697,30 +695,31 @@ footer img{
 
   h2.sub-title {
     margin: 30px auto;
-    font-size: 23px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   section.beating-heart {
+    margin-top: 20px;
     height: initial;
   }
 
   footer {
-    height: 150px;
+    
   }
 
   footer h1 {
     font-size: 15px;
     line-height: 20px;
-    bottom: 40px;
+    /* bottom: 40px; */
   }
 
-  footer a img{
+  /* footer a img{
   left: -40px;
   width: 40px;
   height: 30px;
   bottom: 25px;
-  }
+  } */
 
   .grid-item {
       width: initial;
