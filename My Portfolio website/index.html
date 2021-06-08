@@ -15,75 +15,79 @@
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
   <link rel="stylesheet" href="css/slick.css" />
   <link rel="stylesheet" href="css/slick-theme.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
 </head>
+<body>
 <!-- Messenger Chat Plugin Code -->
 <div id="fb-root"></div>
 
 <!-- Your Chat Plugin code -->
 <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-
+<!-- HEADER & NAVBAR  -->
 <div class="main-overlay js-main-overlay"></div>
 <section class="cover-main" id="home">
-  <header>
-    <nav class="nav-wrapper">
-      <div class="logo">
-        <a href="#">
-          <img src="images/white-logo.png" class="logo">
-          <h3 class="brand">Luke Ponga - Software Developer</h3>
-        </a>
-      </div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#work">My Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#slider">Slider</a></li>
-        <li><a href="#footer">Footer</a></li>
-      </ul>
-    </nav>
+    <header>
+        <nav class="nav-wrapper">
+            <div class="logo">
+                <a href="#home">
+                  <img src="images/Site-Logo.png" class="logo">
+                <h3 class="brand">Luke's Portfolio</h3>
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#slider">Slider</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
     <div class="menu-trigger js-menu-trigger"></div>
-  </header>
-  <div class="wrapper">
-    <ul id="scene" data-invert-x="false" data-invert-y="false" data-scalar-x="7" data-scalar-y="7" data-friction-x="0.1"
-      data-friction-y="0.1" data-origin-x="0.5" data-origin-y="0.5">
-      <li class="layer name" data-depth="0.90">Luke Ponga</li>
-      <li class="layer title" data-depth="0.50">Software Developer</li>
-      <li class="layer btn1 btn-main" data-depth="0.30">
-        <a href="portfolio.html" class="portfolio-btn">View Portfolio</a>
-        <a href="https://www.instagram.com/luke.inc_ltd/" class="contact-btn">Contact Me</a>
-      </li>
-    </ul>
-  </div>
+    </header>
+    <!-- HERO -->
+    <div class="wrapper">
+        <ul id="scene"
+              data-invert-x="false"
+              data-invert-y="false"
+              data-scalar-x="7"
+              data-scalar-y="7"
+              data-friction-x="0.1"
+              data-friction-y="0.1"
+              data-origin-x="0.5"
+              data-origin-y="0.5">
+            <li class="layer name" data-depth="0.90">Luke Ponga</li>
+            <li class="layer title" data-depth="0.50">Web Development & Designs</li>
+            <li class="layer btn1 btn-main" data-depth="0.30">
+                <a href="education.html" class="education-btn">View Education</a>
+                <a href="#" class="contact-btn">Contact Me</a>
+            </li>
+        </ul>
+    </div>
 </section>
 
-<!--Start Projects Section-->
-<div class="container" id="work">
+<!--MY PROEJCTS-->
+<div class="container masonry-grid" id="work">
   <h2 class="sub-title">My Projects</h2>
-  <!--Projects List -->
-  <div class="row" style="">
+  <!--PROEJECTS CARDS -->
+  <div class="row">
     <div class="col-md-6">
-      <div class="card" style="">
-        <img class="card-img-top" style="" src="images/aotearoanz.online.png" alt="">
+      <div class="card">
+        <img class="card-img-top" src="images/aotearoanz.online.png" alt="">
         <div class="card-body">
-          <h2 class="card-title">
-            Attractive New Zealand Website
-          </h2>
+          <h2 class="card-title"> Attractive New Zealand Website</h2>
           <p class="card-text">An Assignment I was given while i was studying web design and development</p>
           <a class="btn btn-primary" target="_blank" href="https://aotearoanz.online/">See Live</a>
-          <a class="btn btn-primary" target="_blank" href="https://github.com/therealponga1/New-Zealand-Website">See
-            Code</a>
+          <a class="btn btn-primary" target="_blank" href="https://github.com/therealponga1/New-Zealand-Website">See Code</a>
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="card" style="">
+      <div class="card">
         <img class="card-img-top" style="width: 100%;" src="images/project2.png" alt="">
         <div class="card-body">
           <h2 class="card-title">
@@ -97,12 +101,10 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="card" style="">
+      <div class="card">
         <img class="card-img-top" style="width: 100%;" src="images/project3.png" alt="">
         <div class="card-body">
-          <h2 class="card-title">
-            Health Clinic MVC
-          </h2>
+          <h2 class="card-title"> Health Clinic MVC</h2>
           <p class="card-text">Software Development ASP.NET MVC Assessment, MVC version of my Doctors Appointment project uses asp.net core mvc framework</p>
           <a class="btn btn-primary" target="_blank" href="https://healthclinicmvc.azurewebsites.net/">See Live</a>
           <a class="btn btn-primary" target="_blank" href="https://github.com/therealponga1/HealthClinic_MVC_DSD-07">See Code</a>
@@ -110,57 +112,40 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="card" style="">
+      <div class="card">
         <img class="card-img-top" style="width: 100%;" src="images/project4.png" alt="">
         <div class="card-body">
-          <h2 class="card-title">
-            Vehicle API
-          </h2>
+          <h2 class="card-title"> Vehicle API</h2>
           <p class="card-text">Web api i made with .net api for storing vehicles </p>
           <a class="btn btn-primary" target="_blank" href="https://webapvehicles.azurewebsites.net/">See Live</a>
           <a class="btn btn-primary" target="_blank" href="https://github.com/lukeponga-dev/WebAPI">See Code</a>
-
         </div>
       </div>
     </div>
-    <!-- <div class="grid-item"><img src="images/Class.jpg" alt="" /></div>
-    <div class="grid-item"><img src="images/class2.jpg" alt="" /></div>
-    <div class="grid-item"><img src="images/one.jpg" alt="" /></div>
-    <div class="grid-item"><img src="images/four.jpg" alt="" /></div>
-    <div class="grid-item"><img src="images/ten.PNG" alt=""></div>
-    <div class="grid-item"><img src="images/hannah_hartley_me.jpg" alt="" /></div> -->
   </div>
 </div>
-<!--End Projects Section-->
 
-
-<!-- About me  -->
-<!-- My name is Luke Ponga i'm from New Zealand i'm very compassionate &
-humble, I've learned alot of knowledge through my journey to success.
-I have gruatuated diploma level (Software Development), i'm very
- devoted when it comes to my work i always strive for the best and to
-be reliable, I make sure any barrier I run into I get passed by using
-analytical methods. I'm committed to continuous learning and
-professional development within the IT fields -->
-
-
+<!--ABOUT ME-->
 <section class="beating-heart" id="about">
   <div class="wrapper">
     <h2 class="sub-title">About Me</h2>
-    <p> I'm from New Zealand i'm very compassionate & humble, I've learned alot of knowledge through my journey to
+    <p>
+       I'm from New Zealand i'm very compassionate & humble, I've learned alot of knowledge through my journey to
       success. I have gruatuated diploma level (Software Development), i'm very devoted when it comes to my work i
       always strive for the best and to be reliable, I make sure any barrier I run into I get passed by using analytical
-      methods. I'm committed to continuous learning and professional development within the IT fields </p>
+      methods. I'm committed to continuous learning and professional development within the IT fields 
+    </p>
     <span>I</span>
+    <!--BEATING HEART-->
     <svg class="heart" viewBox="0 0 32 29.6">
-      <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.6,0,6.4,0C3.6,0,0,3.6,0,6.4c0,9.4,9.5,11.9,16,21.2
-          c6.1-9.3,16-12.1,16-21.2C32,3.6,26.2,0,23.6,0z" />
-    </svg>
+      <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+      c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+      </svg>
     <span>COMPUTERS</span>
   </div>
 </section>
-<!-- END About Me -->
 
+<!-- PHOTO SLIDER -->
 <div class="slider-div" id="slider">
   <h2 class="sub-title">Slider Showcase</h2>
   <div class="slider">
@@ -185,31 +170,21 @@ professional development within the IT fields -->
   </div>
 </div>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer id="footer">
   <h1 class="copyright">All rights reserved by Luke Ponga ©2019</h1>
-  <i class="fa fa-facebook-square" aria-hidden="true"><a class=""
-      href="https://www.facebook.com/LukeDesigns.ltd/"></a></i>
-  <i class="fa fa-instagram" style="color: pink;" aria-hidden="true"> <a
-      href="https://www.instagram.com/luke.inc_ltd/"></a></i>
+  <i class="fa fa-facebook-square" aria-hidden="true"> <a href="https://www.facebook.com/LukeDesigns.ltd/"></a></i>
+  <i class="fa fa-instagram" style="color: pink;" aria-hidden="true"> <a href="https://www.instagram.com/luke.inc_ltd/"></a></i>
 </footer>
-<!--End Footer -->
-<!-- Scripts Javascript, Jquery, parallax -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha364-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
+<!--SCRIPTS AJAX, BOOTSTRAP, PARALLAX, MASONRY, SLICK, CUSTOM -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha364-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="scripts/parallax.min.js"></script>
+<script src="scripts/masonry.js"></script>
 <script src="scripts/slick.min.js"></script>
 <script src="scripts/main.js"></script>
 
-
-<!-- Parallax JS -->
-<script>
-  var scene = document.getElementById('scene')
-  var parallax = new Parallax(scene)
-</script>
-<!-- END Parallax JS -->
 </body>
 
 </html>

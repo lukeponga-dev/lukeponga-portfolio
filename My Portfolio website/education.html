@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta property="og:title" content="Luke Ponga'sPortfolio" />
+    <meta property="og:url" content="developmentdesigns.online" />
+    <meta property="og:author" content="Luke Ponga" />
+
+    <title>Luke Ponga | Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha364-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <div class="main-overlay js-main-overlay"></div>
+    <section class="cover-main" id="Portfolio">
+        <header>
+
+            <nav class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Site-Logo.png" class="logo">
+                        <h3 class="brand">Luke's Portfolio</h3>
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Education</a></li>
+
+                </ul>
+            </nav>
+            <div class="menu-trigger js-menu-trigger"></div>
+        </header>
+        </header>
+        <!-- HERO -->
+        <div class="wrapper">
+            <ul id="scene" data-invert-x="false" data-invert-y="false" data-scalar-x="7" data-scalar-y="7"
+                data-friction-x="0.1" data-friction-y="0.1" data-origin-x="0.5" data-origin-y="0.5">
+                <li class="layer name" data-depth="0.90">Luke Ponga</li>
+                <li class="layer title" data-depth="0.50">Software Developer</li>
+                <li class="layer btn1 btn-main" data-depth="0.30">
+                    <a href="index.html" class="education-btn">View Portfolio</a>
+                    <a href="#" class="contact-btn">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container" id="work">
+        <h2 class="sub-title">QUALIFICATIONS</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">New Zealand Diploma in Software Development (Level 6)</h5>
+                        <p class="card-text">ATC Vision College</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">New Zealand Diploma of Web Development & Design</h5>
+
+                        <p class="card-text">
+                            ATC Vision College
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script src="scripts/masonry.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+</body>
+
+</html>

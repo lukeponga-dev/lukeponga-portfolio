@@ -236,6 +236,7 @@ nav.nav-wrapper ul li a:hover {
 
 header .logo img{
   max-width: 100px;
+  height: 50px;
 }
 header a{
   text-decoration: none;
@@ -288,7 +289,7 @@ ul#scene {
   margin-top: 150px;
 }
 
-.portfolio-btn,
+.education-btn,
 .contact-btn {
   margin: 0 auto;
   display: inline-block;
@@ -335,8 +336,10 @@ ul#scene {
   height: 680px;
 } */
 
+
 .col-md-6{
   margin-bottom:25px;
+  
 }
 
 .btn {

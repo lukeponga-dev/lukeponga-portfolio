@@ -78,6 +78,10 @@ $(document).ready(function() {
           $('body').removeClass("menu-is-active");
       });
 
+      // PARALLAX JS
+      var scene = document.getElementById('scene')
+      var parallax = new Parallax(scene)
+
      // Messenger Chat JS 
       var chatbox = document.getElementById('fb-customer-chat')
       chatbox.setAttribute('page_id', '1857535227643730')
