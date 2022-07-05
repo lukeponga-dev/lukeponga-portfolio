@@ -87,10 +87,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="container" id="work">
         <h2 class="sub-title">QUALIFICATIONS</h2>
         <div class="row">
+                 <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachelor of Computer Science (BCompSc)</h5>
+                        <p class="card-text">2022 - Present </p>
+                        <p class="card-text">The University of Waikato</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">New Zealand Diploma in Software Development (Level 6)</h5>
+                          <p class="card-text">2020 - 2020 </p>
                         <p class="card-text">ATC Vision College</p>
                     </div>
                 </div>
@@ -98,8 +108,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">New Zealand Diploma of Web Development & Design</h5>
-
+                        <h5 class="card-title">New Zealand Diploma of Web Development & Design (Level 5)</h5>
+                          <p class="card-text">2019 - 2019 </p>
                         <p class="card-text">
                             ATC Vision College
                         </p>
@@ -114,52 +124,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="scripts/masonry.js"></script>
     <script src="scripts/slick.min.js"></script>
     <script src="scripts/main.js"></script>
-    <div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=AZtbrH7u0P0gdBWud64U_kDYpby5OnEouzzF8dh9-XNZGytYb5kXUJhUjHAkg6aHZEWjMnpzh2FyK1rE&enable-funding=venmo&currency=NZD" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'pill',
-          color: 'white',
-          layout: 'vertical',
-          label: 'pay',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"description":"PAYMENTS","amount":{"currency_code":"NZD","value":5}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(orderData) {
-            
-            // Full available details
-            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-            // Show a success message within this page, e.g.
-            const element = document.getElementById('paypal-button-container');
-            element.innerHTML = '';
-            element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-            // Or go to another URL:  actions.redirect('thank_you.html');
-            
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script>
 </body>
 
 </html>
