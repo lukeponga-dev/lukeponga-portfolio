@@ -411,6 +411,11 @@ section.beating-heart h2::after {
           animation: pulse 1s infinite;
 }
 
+div#skills {
+ 
+  }
+
+
 @-webkit-keyframes pulse {
       0% {
           -webkit-transform: scale(1);
