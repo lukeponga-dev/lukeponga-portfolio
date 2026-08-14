@@ -1,0 +1,20 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
+const projects: Record<string, { title: string; description: string; problem: string; solution: string; outcome: string; stack: string[] }> = {
+  "copstop": { title: "Copstop", description: "Safety-focused tooling built for real NZ use cases.", problem: "Safety workflows often become fragmented across tools, messages and manual checks.", solution: "A practical product direction that puts clearer signals, useful workflows and operator needs ahead of demo-first complexity.", outcome: "A focused foundation for safety-oriented software with real-world NZ context.", stack: ["TypeScript", "APIs", "Product"] },
+  "safe-trade-nz": { title: "SafeTrade NZ", description: "An industry-aware trading safety product.", problem: "People need clearer information and trust signals when evaluating trades and interactions.", solution: "Design around transparent risk signals and safety-conscious workflows rather than opaque scoring.", outcome: "A product concept centred on making digital trading interactions easier to understand.", stack: ["Web", "Data", "Safety"] },
+  "nzta-traffic": { title: "NZTA & traffic utilities", description: "Public traffic data transformed into operational views.", problem: "Raw public feeds are valuable but difficult to interpret quickly.", solution: "Combine APIs, mapping and geographic data into interfaces that make operational information easier to consume.", outcome: "A reusable pattern for turning public data into useful location-aware software.", stack: ["APIs", "Maps", "GeoJSON", "PostGIS"] },
+  "pi-hole": { title: "Pi-hole network stack", description: "Local DNS and network infrastructure with Raspberry Pi.", problem: "Home networks can become noisy, opaque and dependent on external services.", solution: "Use local DNS filtering, static addressing and network-level control to create a more observable stack.", outcome: "A practical local infrastructure layer with greater control and visibility.", stack: ["Raspberry Pi", "Pi-hole", "DNS", "Networking"] },
+  "ai-creative": { title: "AI creative & story systems", description: "Generative art, branding and AI storytelling experiments.", problem: "Creative AI becomes most useful when it is part of a repeatable production pipeline.", solution: "Combine generative models with structured prompts, visual direction and content workflows.", outcome: "Reusable creative experimentation rather than isolated generations.", stack: ["Generative AI", "Google Genkit", "Creative"] },
+  "api-dashboards": { title: "API dashboards & mobile apps", description: "Interfaces that surface backend truth cleanly.", problem: "Operators and users need actionable information without navigating raw APIs.", solution: "Build focused clients and dashboards around reliable API contracts and clear information hierarchy.", outcome: "A consistent approach to turning backend services into usable products.", stack: ["APIs", "React Native", "TypeScript", "Dashboards"] },
+};
+
+export function generateStaticParams() { return Object.keys(projects).map(slug => ({ slug })); }
+
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = projects[slug];
+  if (!project) notFound();
+  return <main className="wrap project-detail"><Link className="back" href="/projects">← All projects</Link><div className="eyebrow">CASE STUDY / {project.stack.join(" · ")}</div><h1>{project.title}</h1><p className="detail-lead">{project.description}</p><div className="detail-grid"><section><span className="mono">01 / PROBLEM</span><p>{project.problem}</p></section><section><span className="mono">02 / SOLUTION</span><p>{project.solution}</p></section><section><span className="mono">03 / OUTCOME</span><p>{project.outcome}</p></section></div><div className="detail-stack"><span className="mono">TECHNOLOGY</span><div className="tags">{project.stack.map(t => <span className="tag" key={t}>{t}</span>)}</div></div></main>;
+}
