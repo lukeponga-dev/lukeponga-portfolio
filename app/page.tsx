@@ -1,82 +1,25 @@
+import Link from "next/link";
+import { MobileNav } from "./components/mobile-nav";
+import { ThemeToggle } from "./components/theme-toggle";
+
 const profile = {
-  name: "Luke Ponga",
-  role: "Backend-focused software developer",
   location: "Hamilton, New Zealand",
   tagline: "Builds real-world, safety-focused systems — from NZ industry tools to cloud-backed APIs.",
   about: "I design and ship backend-heavy systems that solve concrete problems in Aotearoa. Implementation-first, fast iteration, no fluff — direct steps and production-ready code over generic advice.",
-  strengths: [
-    ["Backend & APIs", ".NET · C# · Java · Python"],
-    ["Frontend & Mobile", "React Native · TypeScript · Tailwind · HTML/CSS"],
-    ["Cloud & Data", "Azure · SQL · Supabase · Firebase"],
-    ["AI & Automation", "Generative AI · Google Genkit"],
-    ["Architecture", "Clean architecture · Workflow optimisation"],
-    ["Networking", "Raspberry Pi · Pi-hole · DNS · Static IP"],
-  ],
-  work: [
-    ["Copstop", "Safety-focused tooling built for real NZ use cases — practical systems over demos.", ["Safety", "NZ", "Product"]],
-    ["SafeTrade NZ", "Industry-aware trading safety product oriented around trust and clearer risk signals.", ["Safety", "NZ", "Product"]],
-    ["NZTA & traffic utilities", "Traffic and mapping utilities that turn public data into usable operational views.", ["APIs", "Maps", "Data"]],
-    ["Pi-hole network stack", "Raspberry Pi + Pi-hole DNS stack for network hygiene, static IP, and local control.", ["Networking", "DNS", "Pi"]],
-    ["AI creative & story systems", "Generative art, branding experiments, and YouTube AI story concepts — creative pipelines with real tooling.", ["AI", "Creative", "Genkit"]],
-    ["API dashboards & mobile apps", "API-driven dashboards and mobile clients that surface backend truth cleanly for operators and users.", ["APIs", "Mobile", "Dashboards"]],
-  ],
-  education: [
-    ["Diplomas in Software Development & Web Development", "Vision College"],
-    ["ISTQB Certified Tester Foundation Level", "ISTQB"],
-    ["Microsoft Build Natural Language AI Certificate", "Microsoft"],
-    ["CodeSignal Generative AI Certificate", "CodeSignal"],
-  ],
+  strengths: [["Backend & APIs", ".NET · C# · Java · Python"], ["Frontend & Mobile", "React Native · TypeScript · Tailwind · HTML/CSS"], ["Cloud & Data", "Azure · SQL · Supabase · Firebase"], ["AI & Automation", "Generative AI · Google Genkit"], ["Architecture", "Clean architecture · Workflow optimisation"], ["Networking", "Raspberry Pi · Pi-hole · DNS · Static IP"]],
+  work: [["Copstop", "Safety-focused tooling built for real NZ use cases — practical systems over demos.", ["Safety", "NZ", "Product"]], ["SafeTrade NZ", "Industry-aware trading safety product oriented around trust and clearer risk signals.", ["Safety", "NZ", "Product"]], ["NZTA & traffic utilities", "Traffic and mapping utilities that turn public data into usable operational views.", ["APIs", "Maps", "Data"]], ["Pi-hole network stack", "Raspberry Pi + Pi-hole DNS stack for network hygiene, static IP, and local control.", ["Networking", "DNS", "Pi"]], ["AI creative & story systems", "Generative art, branding experiments, and YouTube AI story concepts — creative pipelines with real tooling.", ["AI", "Creative", "Genkit"]], ["API dashboards & mobile apps", "API-driven dashboards and mobile clients that surface backend truth cleanly for operators and users.", ["APIs", "Mobile", "Dashboards"]]],
+  education: [["Diplomas in Software Development & Web Development", "Vision College"], ["ISTQB Certified Tester Foundation Level", "ISTQB"], ["Microsoft Build Natural Language AI Certificate", "Microsoft"], ["CodeSignal Generative AI Certificate", "CodeSignal"]],
 };
 
 export default function Home() {
-  return (
-    <main>
-      <header className="wrap nav">
-        <a className="brand" href="#top">LP<span>.</span></a>
-        <nav className="navlinks" aria-label="Primary navigation">
-          <a href="#work">Work</a><a href="#skills">Stack</a><a href="#about">About</a><a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      <section className="wrap hero" id="top">
-        <div>
-          <div className="eyebrow">{profile.location} · 2026</div>
-          <h1>Software that solves <em>real problems.</em></h1>
-          <div className="hero-copy">
-            <p>{profile.tagline}</p>
-            <div className="actions">
-              <a className="btn primary" href="#work">Explore my work ↓</a>
-              <a className="btn" href="https://github.com/lukeponga-dev" target="_blank" rel="noreferrer">GitHub ↗</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section" id="work"><div className="wrap">
-        <div className="section-head"><h2>Selected work</h2><p className="section-intro">Products, utilities and experiments focused on useful outcomes — especially where software meets safety, public data, infrastructure and AI.</p></div>
-        <div className="grid">{profile.work.map(([title, description, tags], i) => <article className="card" key={title}><div className="card-num">0{i + 1} / PROJECT</div><h3>{title}</h3><p>{description}</p><div className="tags">{(tags as string[]).map(t => <span className="tag" key={t}>{t}</span>)}</div></article>)}</div>
-      </div></section>
-
-      <section className="section" id="skills"><div className="wrap">
-        <div className="section-head"><h2>The stack</h2><p className="section-intro">A practical toolkit spanning backend engineering, modern interfaces, cloud infrastructure, AI and local networking.</p></div>
-        <div className="skills">{profile.strengths.map(([title, items]) => <div className="skill" key={title}><h3>{title}</h3><p>{items}</p></div>)}</div>
-      </div></section>
-
-      <section className="section" id="about"><div className="wrap about">
-        <div><div className="mono">ABOUT / 01</div><h2>Implementation first.</h2></div>
-        <div className="about-copy"><p>{profile.about}</p></div>
-      </div></section>
-
-      <section className="section"><div className="wrap">
-        <div className="section-head"><h2>Education</h2><p className="section-intro">Formal training backed by practical software development and testing experience.</p></div>
-        <div className="education">{profile.education.map(([title, org]) => <div className="edu" key={title}><strong>{title}</strong><span>{org}</span></div>)}</div>
-      </div></section>
-
-      <section className="wrap contact" id="contact"><div className="contact-box">
-        <div className="eyebrow">Have a problem worth solving?</div><h2>Let&apos;s build something useful.</h2><p>Open to software development, product engineering and practical technology projects.</p><div className="actions" style={{justifyContent:"flex-start",marginTop:28}}><a className="btn primary" href="mailto:hello@lukeponga.dev">hello@lukeponga.dev ↗</a><a className="btn" href="https://www.linkedin.com/in/lukeponga" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
-      </div></section>
-
-      <footer className="wrap footer"><span>© {new Date().getFullYear()} Luke Ponga · Aotearoa New Zealand</span><a href="#top">Back to top ↑</a></footer>
-    </main>
-  );
+  return <main>
+    <header className="wrap nav"><Link className="brand" href="#top" aria-label="Luke Ponga home">LP<span>.</span></Link><nav className="navlinks" aria-label="Primary navigation"><a href="#work">Work</a><a href="#skills">Stack</a><a href="#about">About</a><a href="#contact">Contact</a></nav><div className="nav-tools"><ThemeToggle /><MobileNav /></div></header>
+    <section className="wrap hero" id="top"><div><div className="eyebrow">{profile.location} · SOFTWARE / PRODUCT / AI</div><h1>Software that solves <em>real problems.</em></h1><div className="hero-copy"><p>{profile.tagline}</p><div className="actions"><a className="btn primary" href="#work">Explore my work ↓</a><a className="btn" href="https://github.com/lukeponga-dev" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></div></section>
+    <section className="section" id="work"><div className="wrap"><div className="section-head"><h2>Selected work</h2><p className="section-intro">Products, utilities and experiments focused on useful outcomes — where software meets safety, public data, infrastructure and AI.</p></div><div className="grid">{profile.work.map(([title, description, tags], i) => <Link className="card" href={`/projects/${["copstop","safe-trade-nz","nzta-traffic","pi-hole","ai-creative","api-dashboards"][i]}`} key={title}><div className="card-num">0{i + 1} / PROJECT</div><h3>{title}</h3><p>{description}</p><div className="tags">{(tags as string[]).map(t => <span className="tag" key={t}>{t}</span>)}</div></Link>)}</div><div className="more"><Link className="btn" href="/projects">View all project case studies →</Link></div></div></section>
+    <section className="section" id="skills"><div className="wrap"><div className="section-head"><h2>The stack</h2><p className="section-intro">A practical toolkit spanning backend engineering, modern interfaces, cloud infrastructure, AI and local networking.</p></div><div className="skills">{profile.strengths.map(([title, items]) => <div className="skill" key={title}><h3>{title}</h3><p>{items}</p></div>)}</div></div></section>
+    <section className="section" id="about"><div className="wrap about"><div><div className="mono">ABOUT / 01</div><h2>Implementation first.</h2></div><div className="about-copy"><p>{profile.about}</p></div></div></section>
+    <section className="section"><div className="wrap"><div className="section-head"><h2>Education</h2><p className="section-intro">Formal training backed by practical software development and testing experience.</p></div><div className="education">{profile.education.map(([title, org]) => <div className="edu" key={title}><strong>{title}</strong><span>{org}</span></div>)}</div></div></section>
+    <section className="wrap contact" id="contact"><div className="contact-box"><div className="eyebrow">Have a problem worth solving?</div><h2>Let&apos;s build something useful.</h2><p>Open to software development, product engineering and practical technology projects.</p><div className="actions contact-actions"><a className="btn primary" href="mailto:hello@lukeponga.dev">hello@lukeponga.dev ↗</a><a className="btn" href="https://www.linkedin.com/in/lukeponga" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
+    <footer className="wrap footer"><span>© {new Date().getFullYear()} Luke Ponga · Aotearoa New Zealand</span><a href="#top">Back to top ↑</a></footer>
+  </main>;
 }
